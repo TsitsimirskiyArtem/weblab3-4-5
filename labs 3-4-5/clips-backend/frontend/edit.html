@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Music Clip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Music Clip</h1>
+        <form id="editForm">
+            <div class="form-group">
+                <label for="editSelect">Select Clip to Edit:</label>
+                <select id="editSelect" class="input select-input"></select>
+            </div>
+            <div class="form-group">
+                <label for="editArtist">Artist Name:</label>
+                <input type="text" id="editArtist" class="input">
+            </div>
+            <div class="form-group">
+                <label for="editSong">Song Name:</label>
+                <input type="text" id="editSong" class="input">
+            </div>
+            <div class="form-group">
+                <label for="editLength">Length (seconds):</label>
+                <input type="number" id="editLength" class="input">
+            </div>
+            <div class="form-group">
+                <label for="editViews">Views:</label>
+                <input type="number" id="editViews" class="input">
+            </div>
+            <button type="submit" class="btn save-btn">Save Changes</button>
+        </form>
+    </div>
+    <script src="edit.js"></script>
+</body>
+</html>

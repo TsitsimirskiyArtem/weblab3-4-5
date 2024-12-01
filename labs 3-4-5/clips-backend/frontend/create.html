@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Clips CRUD App - Create</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Підключення styles.css -->
+</head>
+<body>
+    <h1>Create New Music Clip</h1>
+    <form id="createForm">
+        <label for="artist">Artist Name:</label>
+        <input type="text" id="artist" name="artist" required>
+
+        <label for="song">Song Name:</label>
+        <input type="text" id="song" name="song" required>
+
+        <label for="length">Length (seconds):</label>
+        <input type="number" id="length" name="length" min="1" required>
+
+        <label for="views">Views:</label>
+        <input type="number" id="views" name="views" min="0" required>
+
+        <button type="submit">Create</button>
+    </form>
+
+    <!-- Модальне Вікно -->
+    <div id="modalOverlay"></div>
+    <div id="modal">
+        <p id="modalText"></p>
+        <button id="closeModal">Закрити</button>
+    </div>
+
+    <script src="create.js"></script>
+</body>
+</html>

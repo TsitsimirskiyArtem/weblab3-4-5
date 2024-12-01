@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Clips CRUD App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Music Clips Management</h1>
+
+        <div class="controls">
+            <div class="controls-row">
+                <button id="sortViews">Sort by Views</button>
+                <button id="sortLength">Sort by Duration</button>
+                <button id="totalViews">Calculate Total Views</button>
+                <input type="text" id="search" placeholder="Search by Artist or Song">
+            </div>
+            <div class="controls-buttons">
+                <a href="create.html">Add New Clip</a>
+                <a href="edit.html">Edit Clip</a>
+            </div>
+        </div>
+        
+        <div id="clipsList"></div>
+        <div id="total"></div>
+    </div>
+
+    <div id="modalOverlay"></div>
+    <div id="modal">
+        <p id="modalText"></p>
+        <button id="closeModal">Закрити</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
